@@ -3,16 +3,10 @@
 @import 'fonts';
 
 
-.text2{
-    font-family: 'Bebas Neue', cursive;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Condensed', sans-serif;
-}
+
 
 .telo{
-    height: 2141px;
+    height: 2100px;
     @include ibg;
 }
 .container{
@@ -216,6 +210,78 @@
     width: 1600px;
     @include ibg;
 }
+
+.circle{
+    position: absolute;
+    top: 1500px;
+    &__inner{
+        width: 1500px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        width: 150px;
+        text-align: center;
+    }
+    &__img{
+        height: 75px;
+        width: 75px;
+        @include ibg;
+        margin: 0 auto;
+    }
+}
+
+.circle__text-count{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 22px;
+}
+.circle__text-inf{
+    color: #000;
+    font-size: 18px;
+}
+
+
+.circle__one{
+    margin-top: -10px;
+}
+
+.circle__two{
+    margin-top: 25px;
+}
+
+.circle__three{
+    margin-top: 125px;
+}
+
+.circle__five{
+    margin-top: 10px;
+}
+
+.footer{
+   position: absolute; 
+   top: 1900px;
+   width: 100%;
+   text-align: center;
+   font-family: 'Roboto Condensed', sans-serif;
+   color: #fff;
+   a{
+       color: #fff;
+       cursor: pointer;
+       font-size: 25px;
+   }
+}
+.footer__text-one{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.footer__text-two{
+    font-size: 30px;
+    line-height: 50px;
+    span{
+        color: #000;
+    }
+}
 @import 'media';
 //end present box
-
